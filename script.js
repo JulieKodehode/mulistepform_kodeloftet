@@ -6,7 +6,8 @@ function nextStep() {
 	// Check if the current step is less than 4 (total number of steps)
 	if (currentStep < 4) {
 		// Hide the current step
-		document.getElementById(`step${currentStep}`).classList.add("hidden");
+		const currentStep = document.getElementById(`step${currentStep}`);
+		currentStep.classList.add("hidden");
 		// Increment the current step
 		currentStep++;
 		// Show the next step
@@ -30,6 +31,8 @@ function prevStep() {
 		// Show the previous step
 		document.getElementById(`step${currentStep}`).classList.remove("hidden");
 	}
+
+	return div;
 }
 
 // // WITH FOREACH

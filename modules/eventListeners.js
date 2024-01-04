@@ -1,4 +1,4 @@
-import { nextStep, prevStep } from "./stepNavigation.js";
+import { nextStep, prevStep } from "../modules/stepNavigation.js";
 
 // Event listener registration using forEach for "Next" buttons
 document.querySelectorAll(".next-btn").forEach(function (button) {

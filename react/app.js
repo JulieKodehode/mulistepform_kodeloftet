@@ -2,7 +2,8 @@
 
 // Må laste ned Node og bruke npm install react for å få installert react til prosjektet.
 // useState er en react-hook som kan sette statuser på aktive klasse komponenter
-// import React, { useState } from "react";
+
+import React, { useState } from "react";
 
 const App = () => {
 	const [currentStep, setCurrentStep] = useState(1);
@@ -31,7 +32,11 @@ const App = () => {
 	return (
 		<div>
 			{/* Render your steps based on the currentStep */}
-			<div id="step1" className={currentStep === 1 ? "" : "hidden"}>
+			<div
+				id="step1"
+				className={currentStep === 1 ? "" : "hidden"}
+				// If currentStep is equal to 1 do "" if is not equal do "hidden"
+			>
 				Step 1 Content
 			</div>
 			<div id="step2" className={currentStep === 2 ? "" : "hidden"}>
